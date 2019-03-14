@@ -1,0 +1,17 @@
+{
+  "name": "Hate-Bot",
+  "version": "1.0.0",
+  "manifest_version": 2,
+
+  "description": "Hate Speech Detection",
+  "icons": {
+    "128": ""
+  },
+  "browser_action": {
+    "default_title": "Hate Speech Detector",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "<all_urls>"
+  ]
+}
