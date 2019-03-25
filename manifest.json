@@ -1,17 +1,14 @@
 {
-  "name": "Hate-Bot",
-  "version": "1.0.0",
   "manifest_version": 2,
 
-  "description": "Hate Speech Detection",
-  "icons": {
-    "128": ""
-  },
+  "name": "Hate Bot",
+  "description": "Hate Speech Analysis Extension",
+  "version": "1.0.0",
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "icons": { "128": "icon.png" },
   "browser_action": {
-    "default_title": "Hate Speech Detector",
-    "default_popup": "index.html"
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
   },
-  "permissions": [
-    "<all_urls>"
-  ]
+  "permissions": ["activeTab"]
 }

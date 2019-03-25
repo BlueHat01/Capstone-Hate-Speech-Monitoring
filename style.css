@@ -1,0 +1,22 @@
+.signup-div {
+  display: none;
+}
+.welcome-div {
+  display: none;
+}
+#login_btn {
+  background-color: green;
+  color: white;
+}
+#dispsign {
+  background-color: red;
+  color: white;
+}
+#signup_btn {
+  background-color: green;
+  color: white;
+}
+#displog {
+  background-color: red;
+  color: white;
+}

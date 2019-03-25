@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+</head>
+<body>
+
+  <div id="login_div" class="login-div">
+    <h3>Login Account</h3>
+    <input type="email" placeholder="Email" id="email_field"/>
+    <input type="password" placeholder="Password" id="password_field"/>
+
+    <button id=login_btn>Login to Account</button>
+    <h5>Do not have an Account?</h5>
+    <button id="dispsign">Create Account</button>
+  </div>
+  <div id="signup_div" class="signup-div">
+    <h3>Create Account</h3>
+    <input type="email" placeholder="Email" id="email_field_signup"/>
+    <input type="password" placeholder="Password" id="password_field_signup"/>
+
+    <button id="signup_btn">Create Account</button>
+    <h5>Already have an Account?</h5>
+    <button id="displog">Login Account</button>
+  </div>
+  <div id="welcome_div" class ="welcome-div">
+    <h3>Welcome user</h3>
+    <p id="user_para">Welcome to your Account</p>
+    <button id="logout_btn">Logout</button>
+    <button id="verify_btn">Send Email Verification</button>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+
+  <script src='popup.js'></script>
+</body>
+</html>
