@@ -17,11 +17,18 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 
 
-    if(user!=null) {
+    if(user!=null && user.emailVerified==true) {
 
       var email_id = user.email;
 
-      document.getElementById("user_para").innerHTML = "Welcome User :" + email_id;
+      document.getElementById("user_para").innerHTML = "Welcome User:"+email_id+" Your Account has been activated";
+      document.getElementById("verify_btn").style.display="none";
+    }
+    else if(user!=null) {
+
+      var email_id = user.email;
+
+      document.getElementById("user_para").innerHTML = "Welcome User :" + email_id +". Please verify your email and login again.";
     }
   } else {
     // No user is signed in.
