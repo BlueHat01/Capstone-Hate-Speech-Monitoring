@@ -23,6 +23,9 @@ firebase.auth().onAuthStateChanged(function(user) {
 
       document.getElementById("user_para").innerHTML = "Welcome User:"+email_id+" Your Account has been activated";
       document.getElementById("verify_btn").style.display="none";
+      var url = getCurrentTab();
+      
+
     }
     else if(user!=null) {
 
@@ -100,3 +103,11 @@ function logout() {
 }
 
 document.getElementById("logout_btn").onclick=function(){logout()};
+
+
+function getCurrentTab() {
+  chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+    var urlText = (tabs[0].url);
+    return urlText;
+});
+}

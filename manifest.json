@@ -4,6 +4,12 @@
   "name": "Hate Bot",
   "description": "Hate Speech Analysis Extension",
   "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
   "icons": { "400": "icon.png" },
   "browser_action": {
