@@ -71,29 +71,5 @@ var callToneAnalyzer = function (word) {
 };
 
 
-function generalTranslator(word) {
 
-    var childname = word.menuItemId;
-
-    if (childname == 'child1') {
-        Translator(word, 'es', 'Spanish');
-        return;
-    }
-    if (childname == 'child2') {
-        Translator(word, 'ar', 'Arabic');
-        return;
-    }
-    if (childname == 'child3') {
-        Translator(word, 'fr', 'French');
-        return;
-    }
-    if (childname == 'child4') {
-        Translator(word, 'pt', 'Portuguese');
-        return;
-    }
-    if (childname == 'child5') {
-        Translator(word, 'de', 'German');
-        return;
-    }
-}
 
