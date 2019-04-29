@@ -1,4 +1,3 @@
-const translatorapikey = "LA5JCioYJfz89Us9pCLGg6i_CBUb5ZmqR1Rq54gSei2w";
 const toneanalyzerapikey = "bLF21kTqxCgtS4mYrNeEQETUUtdbGbiuEiu36U0JUwva";
 
 function getAPIKeyV2(apikey){

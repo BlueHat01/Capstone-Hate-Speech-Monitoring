@@ -1,5 +1,5 @@
 {
-  "name": "IBM Watson Extension V1",
+  "name": "Hate Bot",
   "version": "1.0",
   "manifest_version": 2,
   "description": "Chrome Extension to access IBM Watson API",
