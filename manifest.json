@@ -1,20 +1,37 @@
 {
+  "name": "IBM Watson Extension V1",
+  "version": "1.0",
   "manifest_version": 2,
-
-  "name": "Hate Bot",
-  "description": "Hate Speech Analysis Extension",
-  "version": "1.0.0",
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
-  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
-  "icons": { "400": "icon.png" },
+  "description": "Chrome Extension to access IBM Watson API",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
-  "permissions": ["activeTab"]
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "icons": {
+    "400": "icon.png"
+  },
+  "background": {
+    "scripts": ["content.js","background.js"]
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://*/",
+      "http://*/*"
+
+    ],
+    "all_frames": true,
+    "js": ["content.js"]
+  }],
+  "web_accessible_resources": [
+    "content.js"
+  ],
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
 }
