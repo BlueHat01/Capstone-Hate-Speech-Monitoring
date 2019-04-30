@@ -1,3 +1,22 @@
+body{
+  background-image: url(back1.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  width: 300px;
+  height: 300px;
+}
+body  input{
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 5px;
+  background: #fff;
+  outline: none;
+  width: 100%;
+  margin-bottom: 5px;
+}
 .signup-div {
   display: none;
 }
@@ -5,22 +24,62 @@
   display: none;
 }
 #login_btn {
-  background-color: green;
-  color: white;
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 #dispsign {
-  background-color: red;
-  color: white;
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 #signup_btn {
-  background-color: green;
-  color: white;
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 #displog {
-  background-color: red;
-  color: white;
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 #logout_btn {
-  background-color: blue;
-  color: white;
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
