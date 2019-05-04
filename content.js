@@ -1,5 +1,11 @@
 const toneanalyzerapikey = "bLF21kTqxCgtS4mYrNeEQETUUtdbGbiuEiu36U0JUwva";
 
+function highlightSelect(){
+    chrome.tabs.executeScript({
+        code: "alert(window.getSelection().toString());"
+    });
+    }
+
 function getAPIKeyV2(apikey){
     return new Promise(function(resolve, reject){
         var xmlRequest = new XMLHttpRequest();
